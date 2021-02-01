@@ -1,0 +1,153 @@
+/* CSS Document */
+
+@media (min-width: 375px){
+}
+
+@media (min-width: 700px){
+  
+  .slider-container{
+    height: 445px;
+  }
+  
+  .slide-image-1 { background-image: url("../img/desktop-image-hero-1.jpg") } 
+  .slide-image-2 { background-image: url("../img/desktop-image-hero-2.jpg") } 
+  .slide-image-3 { background-image: url("../img/desktop-image-hero-3.jpg") } 
+
+  .container {
+    padding: 50px 35px;
+  }
+  
+  .description p{
+    padding-right: 10rem;
+  }
+  
+  .mobile-menu{
+    display: none;
+  }
+  
+  .close-menu{
+    display: none;
+  }
+  
+  .logo{
+    margin-right: 90px;
+  }
+  
+  .nav-links{
+    height: initial;
+    background-color: transparent;
+    position: initial;
+    width: initial;
+    padding: 0;
+    animation: none;
+  }
+  
+  .nav-link a{
+    color: var(--White);
+  }
+
+  .details{
+    height: 350px;
+  }
+
+
+}
+
+@media (min-width: 1440px){
+  
+  .grid-container{
+    position: relative;
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-areas: 
+    "hero-img details"
+    "decore-container decore-container";
+    grid-template-columns: 1.5fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  /*    grid-template-rows: minmax(100px, auto);*/
+  }
+
+
+  .hero-img {
+    grid-area: hero-img;
+  }
+
+  
+  .details {
+    grid-area: details;
+    padding: 85px 70px 0 70px;
+    position: relative;
+    height: auto;
+  }
+
+  .container.position {
+    position: relative;
+  }
+
+  .description.info {
+  position: absolute;
+  opacity: 0;
+  transition: 0.4s ease;
+  }
+
+  .description.active {
+  opacity: 1;
+  } 
+  
+  .decore-container {
+    grid-area: decore-container;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1fr;
+  }
+  
+  .decore-container .container{
+    padding: 50px 40px 0 40px;
+  }
+  
+  .slider-container {
+    height: 560px;
+  }
+  
+  .container {
+    padding: 0;
+  }
+  
+  .description h2 {
+    font-size: 41px;
+    font-weight: 600;
+    color: var(--Black);
+  }
+  
+  .description p {
+     padding-right: 0;
+    /* width: calc( 100% - 30px); */
+  }
+
+  .button{
+    width: 4.5rem;
+    height: 4.5rem;
+  }
+
+  .button-content.mobile{
+    display: none;
+  }
+
+  .button-content.desktop {
+    display: flex;
+    left: 0;
+    bottom: 0;
+  }
+
+
+  
+}
+
+
+
+
+
+
+
+
+
